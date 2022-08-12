@@ -1,42 +1,6 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
 
-/*--------------------*/
-.bigred {
-  font-size: 20px;
-  color: red;
-}
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
+.about__img{
+    display: flex;
+    justify-content: space-between;
 }
