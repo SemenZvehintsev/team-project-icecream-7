@@ -1,0 +1,101 @@
+.section--about {
+    padding-top: 60px;
+    background-color: $color-light-pink;
+        @media screen and (min-width: 1200px) {
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 0 236px;
+                background-image: url(../images/about/milk-bg-1200.png);
+        
+                @media screen and (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/about/milk-bg-2400.png);
+                }
+            }
+}
+
+.about {
+
+    @media screen and (max-width: 767px) {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 390px;
+        background-image: url(../images/about/milk-bg-280.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/about/milk-bg-560.png); 
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 20px;
+        margin-left: 16px;
+        align-items: center;
+        gap: 99px;
+    }
+    
+    &__img {
+        width: 280px;
+        
+        @media screen and (min-width: 768px) {
+            width: 336px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 501px;
+        }
+    }
+
+    &__description {
+        width: 220px;
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.62;
+        
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+            width: 334px;
+            font-size: 14px;
+            line-height: 1.76;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 463px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 32px;
+        color: $color-black;
+        
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            letter-spacing: 0.04em;
+        }
+    }
+
+    &__secondary-text {
+        color: $color-grey;
+        margin-bottom: 20px;
+        letter-spacing: 0.03em;
+        
+        @media screen and (min-width: 768px) {
+            margin-bottom: 40px;
+            letter-spacing: 0.04em;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.94;
+        }
+    }
+}
