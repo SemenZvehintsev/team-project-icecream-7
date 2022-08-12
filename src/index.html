@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>IceCream</title>
+
+    <!-- Fonts styles -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS styles -->
+
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
     <header>
-      <include src="./partials/hero-header.html"></include>
+      <include src="./partials/header.html"></include>
+      <include src="./partials/hero.html"></include>
     </header>
     <main>
       <include src="./partials/products.html"></include>
@@ -23,5 +32,9 @@
     <footer>
       <include src="./partials/footer.html"></include>
     </footer>
+
+    <!-- JS scripts -->
+
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
