@@ -270,6 +270,11 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .pink:before {
+    background-image: url("../images/products/ice-cream@2x.png");
+  }
+}
 
 .yellow {
   background-color: #f0d1a5;
@@ -305,6 +310,11 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .yellow:before {
+    background-image: url("../images/products/ice-coffee@2x.png");
+  }
+}
 
 .green {
   background-color: #c2e297;
@@ -338,6 +348,11 @@ body {
     margin-left: -64px;
     margin-top: -270px;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .green:before {
+    background-image: url("../images/products/milkshake@2x.png");
   }
 }
 
