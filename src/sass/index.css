@@ -148,7 +148,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffb8ca;
 }
 @media screen and (min-width: 320px) {
   .header-flex {
@@ -162,7 +161,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header-flex {
-    padding-top: 40px;
     padding-right: 16px;
     padding-left: 16px;
   }
@@ -237,20 +235,15 @@ body {
 }
 
 .header__mobile {
-  position: absolute;
-  padding: 20px 20px;
+  position: fixed;
+  width: 250px;
+  height: 100%;
   top: 0;
-  right: 0;
+  left: 0;
+  transform: translateX(-100%);
   background-color: #e17992;
-  transform: translateY(-100%);
-  transition: transform 250ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
-}
-@media screen and (min-width: 320px) {
-  .header__mobile {
-    width: 250px;
-    height: 502px;
-  }
 }
 @media screen and (min-width: 768px) {
   .header__mobile {
@@ -264,7 +257,7 @@ body {
   }
 }
 .header__mobile.is-open {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .header__burger {
@@ -295,8 +288,8 @@ body {
 .header__mobile-button {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 32px;
+  margin-top: 60px;
+  margin-bottom: 19px;
   display: block;
   width: 209px;
   height: 44px;
@@ -322,15 +315,24 @@ body {
   margin-left: 15px;
 }
 
-.header__mobile-list + .header__mobile-list {
-  margin-top: 22px;
+.header__mobile-item {
+  padding-left: 20px;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
 }
 
 .header__mobile-link {
+  padding-top: 13px;
+  padding-bottom: 11px;
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__mobile-link:hover, .header__mobile-link:focus {
+  color: #D41443;
 }
 
 .backdrop {
