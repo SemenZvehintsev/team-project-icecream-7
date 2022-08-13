@@ -103,6 +103,10 @@
 }
 
 .header__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   border: none;
   width: 20px;
