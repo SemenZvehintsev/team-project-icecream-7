@@ -81,7 +81,7 @@ body {
   margin-bottom: 15px;
   font-size: 18px;
   line-height: 1.17;
-  color: #FFA5BA;
+  color: #ffa5ba;
 }
 @media screen and (min-width: 768px) {
   .naming__label {
@@ -101,7 +101,7 @@ body {
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.04em;
-  color: #D41443;
+  color: #d41443;
 }
 @media screen and (min-width: 768px) {
   .naming__title {
@@ -116,7 +116,7 @@ body {
 }
 
 .button {
-  background: #FFFFFF;
+  background: #ffffff;
   height: 44px;
   border-radius: 22px;
   border: none;
@@ -128,7 +128,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #D41443;
+  color: #d41443;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button__icon {
@@ -136,7 +136,7 @@ body {
   fill: currentColor;
 }
 .button:hover, .button:focus {
-  background-color: #ECEBEB;
+  background-color: #ecebeb;
 }
 
 .header {
@@ -332,7 +332,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__mobile-link:hover, .header__mobile-link:focus {
-  color: #D41443;
+  color: #d41443;
 }
 
 .backdrop {
@@ -564,7 +564,7 @@ body {
 
 .section--about {
   padding-top: 60px;
-  background-color: #FFF5F6;
+  background-color: #fff5f6;
 }
 @media screen and (min-width: 1200px) {
   .section--about {
@@ -651,7 +651,7 @@ body {
   }
 }
 .about__secondary-text {
-  color: #907E82;
+  color: #907e82;
   margin-bottom: 20px;
   letter-spacing: 0.03em;
 }
