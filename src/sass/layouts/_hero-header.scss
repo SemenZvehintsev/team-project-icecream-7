@@ -8,6 +8,16 @@
   @media screen and (min-width: 320px) {
     padding-top: 8px;
   }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 40px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 
 // MAIN NAVIGATION
@@ -29,12 +39,14 @@
 }
 
 .header__nav-link {
+  padding-top: 52px;
+  padding-bottom: 52px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
 
   color: #ffffff;
-  transition: color 250ms linear;
+  transition: color 250ms linear, transform 250ms linear;
 
   &:hover,
   &:focus {
@@ -246,9 +258,10 @@
 .form__title {
   margin-bottom: 12px;
   display: block;
-  font-weight: 700;
+  font-family: 'Titan One';
+  font-weight: 500;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.27;
   text-align: center;
   letter-spacing: 0.03em;
   color: #d41443;
@@ -259,13 +272,6 @@
   display: block;
   margin-top: 4px;
 }
-
-// .form__icon {
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   left: 15px;
-// }
 
 .form__input {
   padding-left: 12px;
@@ -287,12 +293,6 @@
     outline: none;
     border-color: #d41443;
   }
-  //   &:focus ~ .form__icon {
-  //     fill: teal;
-  //   }
-  //   &:hover ~ .form__icon {
-  //     fill: teal;
-  //   }
 }
 
 .form__label {
@@ -343,6 +343,7 @@
 
 .form__link {
   color: #d41443;
+  font-family: 'Titan One';
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
