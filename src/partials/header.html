@@ -1,1 +1,165 @@
-<h1>header</h1>
+<!-- HEADER -->
+
+<header class="header">
+  <div class="container header-flex">
+    <a class="header__logo" href="./index.html"
+      ><svg class="header__logo-icon" width="199" height="50">
+        <use href="/src/images/header/icon.svg#icon-logo"></use></svg
+    ></a>
+
+    <!-- MOBILE MENU -->
+
+    <button
+      class="header__burger js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="header__burger-icon" width="20" height="12">
+        <use href="/src/images/header/icon.svg#icon-Burger"></use>
+      </svg>
+    </button>
+
+    <div class="header__mobile js-menu-container" id="mobile-menu">
+      <button class="header__close js-close-menu" type="button">
+        <svg class="header__close-icon" width="14" height="14">
+          <use href="/src/images/header/icon.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button class="header__mobile-button" type="button">
+        Buy now
+        <svg class="header__mobile-icon" width="8" height="8">
+          <use href="/src/images/header/icon.svg#icon-vectorright"></use>
+        </svg>
+      </button>
+      <nav class="header__mobile-nav">
+        <ul class="header__mobile-list">
+          <li class="header__mobile-item">
+            <a class="header__mobile-link header__mobile-link-active" href="#"
+              >Home</a
+            >
+          </li>
+          <li class="header__mobile-item">
+            <a class="header__mobile-link" href="#about">About us</a>
+          </li>
+          <li class="header__mobile-item">
+            <a class="header__mobile-link" href="#advantages">How it’s made?</a>
+          </li>
+          <li class="header__mobile-item">
+            <a class="header__mobile-link" href="#products">Our products</a>
+          </li>
+          <li class="header__mobile-item">
+            <a class="header__mobile-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- HEADER NAV MAIN -->
+
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">Home</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#about">About us</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#advantages">How it’s made?</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#products">Our products</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__button" type="button" data-modal-open>
+      Buy now
+      <svg class="header__button-icon" width="8" height="8">
+        <use href="/src/images/header/icon.svg#icon-vectorright"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- MODAL CONTAINER -->
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <!-- MODAL FORM -->
+
+      <form class="form">
+        <div role="group" class="container-form">
+          <strong class="form__title">
+            Leave your massage we will call you back soon</strong
+          >
+          <label>
+            Name
+            <span class="form__block">
+              <input
+                class="form__input form__field"
+                type="text"
+                name="name"
+                placeholder=" "
+                required
+              />
+            </span>
+          </label>
+          <label>
+            Phone
+            <span class="form__block">
+              <input
+                class="form__input form__field"
+                type="tel"
+                name="tel"
+                placeholder=" "
+                required
+              />
+            </span>
+          </label>
+          <label>
+            E-mail
+            <span class="form__block">
+              <input
+                class="form__input form__field"
+                type="email"
+                name="email"
+                placeholder=" "
+                required
+              />
+            </span>
+          </label>
+          <label class="form__label">
+            Comments
+
+            <textarea
+              class="form__textarea form__field"
+              name="feedback"
+              placeholder="Your comments"
+            ></textarea>
+          </label>
+        </div>
+
+        <label class="checkbox__label">
+          <input
+            class="visually-hidden checkbox__input"
+            type="checkbox"
+            required
+          />
+          <span class="checkbox__icon"></span>
+          I agree with
+          <a class="form__link" href="#"> conditions</a>
+        </label>
+        <button class="form__button" type="submit">SEND</button>
+      </form>
+
+      <button class="modal__button" type="button" data-modal-close>
+        <svg width="30" height="30">
+          <use href="/src/images/header/icon.svg#icon-icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
