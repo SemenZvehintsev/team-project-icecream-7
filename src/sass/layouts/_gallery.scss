@@ -1,0 +1,65 @@
+
+
+.gallery__img{
+    display: flex;
+    justify-content: space-between;
+
+}
+.gallery {
+
+    @media screen and (max-width: 767px) {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 390px;
+        background-image: url(../images/about/milk-bg-280.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/about/milk-bg-560.png); 
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 20px;
+        margin-left: 16px;
+        align-items: center;
+        gap: 99px;
+    }
+    
+    &__img {
+        width: 280px;
+        
+        @media screen and (min-width: 768px) {
+            width: 336px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 501px;
+        }
+    }
+
+    &__description {
+        width: 220px;
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.62;
+        
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+            width: 334px;
+            font-size: 14px;
+            line-height: 1.76;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 463px;
+        }
+    }
+}
