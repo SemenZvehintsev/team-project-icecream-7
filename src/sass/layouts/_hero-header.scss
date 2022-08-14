@@ -408,3 +408,265 @@
 .checkbox__input:checked + .checkbox__icon {
   background-image: url(/src/images/header/iconcheck.svg);
 }
+
+// HERO
+
+.hero {
+  background-color: #ffb8ca;
+  margin-top: -1px;
+}
+.hero-bg {
+  position: relative;
+
+  height: 502px;
+
+  @media screen and (min-width: 768px) {
+    height: 416px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 664px;
+  }
+}
+
+.hero__main-container {
+  display: flex;
+}
+
+.hero__title-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 6;
+
+  @media screen and (min-width: 768px) {
+    position: static;
+  }
+}
+
+.hero__title {
+  width: 218px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-white;
+
+  &-big {
+    font-size: 48px;
+    line-height: 96.5%;
+    color: $color-red;
+
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      line-height: 90.5%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 162px;
+    font-size: 22px;
+    line-height: 1.13;
+  }
+}
+
+.hero__link-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.hero__button-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 24px;
+
+  background-color: $color-red;
+  border-radius: 20px;
+
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: $color-white;
+}
+.hero__button-made {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83px;
+  height: 24px;
+
+  background-color: $color-white;
+  border-radius: 20px;
+
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: $color-red;
+  transition: background-color $transition;
+
+  &:hover,
+  &focus {
+    background-color: $color-hover;
+    border-radius: 20px;
+  }
+}
+
+.hero-subtitle-container {
+  //   text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.hero-text-container {
+  margin-top: 100px;
+  margin-left: 154px;
+  width: 114px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+
+  color: $color-white;
+
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+.hero-svg-container {
+  position: relative;
+  //   height: 41px;
+}
+.hero__elipse-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hero__button-arrow {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  background-color: $color-white;
+  //   overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.button__arrow-right {
+  width: 18px;
+  height: 18px;
+}
+
+.hero__subtitle {
+  //   margin-top: 94px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+
+  //   text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $color-red;
+  z-index: 2;
+
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+// .hero__subtitle--top {
+//   margin-top: 100px;
+// }
+.hero__subtitle-text {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  //   text-align: right;
+
+  color: $color-white;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__ellipse-main {
+  position: absolute;
+  right: 0;
+  bottom: 75px;
+  z-index: 4;
+  pointer-events: none;
+
+  @media screen and (min-width: 768px) {
+    right: 185px;
+    bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    right: 150px;
+    bottom: 76px;
+  }
+}
+
+.hero__icecream-main {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  z-index: 5;
+
+  @media screen and (min-width: 768px) {
+    right: 303px;
+  }
+}
+
+.hero__img-milk {
+  position: absolute;
+  bottom: 0;
+  left: 32px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__elipse-icon {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__img-tastygirl {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  z-index: 8;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
