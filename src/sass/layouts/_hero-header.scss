@@ -97,7 +97,7 @@
   transform: translateX(-100%);
   background-color: #e17992;
   transition: transform $transition;
-  z-index: 1;
+  z-index: 50;
 
   @media screen and (min-width: 768px) {
     width: 254px;
@@ -199,7 +199,7 @@
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   visibility: visible;
   overflow-y: scroll;
-  z-index: 4;
+  z-index: 60;
 }
 
 .backdrop.is-hidden {
@@ -409,15 +409,13 @@
   background-image: url(/src/images/header/iconcheck.svg);
 }
 
-// HERO
+// HERO SECTION
 
 .hero {
   background-color: #ffb8ca;
-  margin-top: -1px;
 }
 .hero-bg {
   position: relative;
-
   height: 502px;
 
   @media screen and (min-width: 768px) {
@@ -433,14 +431,8 @@
 }
 
 .hero__title-container {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 6;
-
-  @media screen and (min-width: 768px) {
-    position: static;
-  }
+  margin-top: 136px;
+  z-index: 20;
 }
 
 .hero__title {
