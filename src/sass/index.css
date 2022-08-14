@@ -355,7 +355,7 @@ body {
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   visibility: visible;
   overflow-y: scroll;
-  z-index: 60;
+  z-index: 90;
 }
 
 .backdrop.is-hidden {
@@ -378,6 +378,7 @@ body {
   background-position: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  z-index: 90;
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -573,6 +574,7 @@ body {
 
 .hero {
   background-color: #ffb8ca;
+  margin: -1px;
 }
 
 .hero-bg {
@@ -586,7 +588,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero-bg {
-    height: 664px;
+    height: 582px;
   }
 }
 
@@ -602,6 +604,11 @@ body {
 @media screen and (min-width: 768px) {
   .hero__title-container {
     margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title-container {
+    margin-top: 60px;
   }
 }
 
@@ -627,11 +634,24 @@ body {
     line-height: 90.5%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__title-big {
+    font-size: 58px;
+    line-height: 90.5%;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero__title {
     width: 162px;
     font-size: 22px;
     line-height: 1.13;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 38px;
+    line-height: 1.15;
+    width: 300px;
   }
 }
 
@@ -654,6 +674,14 @@ body {
   line-height: 1.25;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .hero__button-product {
+    width: 107px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
 
 .hero__button-made {
   display: flex;
@@ -673,12 +701,25 @@ body {
   background-color: #ecebeb;
   border-radius: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .hero__button-made {
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
 
 .hero-subtitle-container {
   margin-top: 18px;
   display: flex;
   flex-direction: column;
   gap: 17px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-subtitle-container {
+    margin-top: 72px;
+  }
 }
 
 .hero-text-container {
@@ -690,6 +731,14 @@ body {
   align-items: flex-start;
   justify-content: center;
   gap: 7px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-text-container {
+    width: 200px;
+    margin-top: 108px;
+    margin-left: 213px;
+    gap: 20px;
+  }
 }
 
 .hero__text {
@@ -709,12 +758,21 @@ body {
     display: block;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
 
 .hero-svg-container {
   position: relative;
 }
 
 .hero__button-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   width: 18px;
   height: 18px;
@@ -725,6 +783,12 @@ body {
 @media screen and (max-width: 767px) {
   .hero__button-arrow {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__button-arrow {
+    width: 26px;
+    height: 26px;
   }
 }
 
@@ -742,16 +806,17 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
-  z-index: 3;
+  z-index: 8;
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   .hero__subtitle {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__subtitle {
-    display: block;
+    font-size: 46px;
+    line-height: 1.15;
   }
 }
 
@@ -765,6 +830,12 @@ body {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__elipse-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 .hero__subtitle-text {
   font-weight: 400;
@@ -775,6 +846,12 @@ body {
 @media screen and (max-width: 767px) {
   .hero__subtitle-text {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__subtitle-text {
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 
@@ -809,6 +886,11 @@ body {
     right: 303px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__icecream-main {
+    margin-right: 35px;
+  }
+}
 
 .hero__img-milk {
   position: absolute;
@@ -818,6 +900,11 @@ body {
 @media screen and (max-width: 767px) {
   .hero__img-milk {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__img-milk {
+    margin-bottom: 60px;
   }
 }
 
