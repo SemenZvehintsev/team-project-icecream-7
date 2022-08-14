@@ -428,11 +428,16 @@
 
 .hero__main-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .hero__title-container {
   margin-top: 136px;
   z-index: 20;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
 }
 
 .hero__title {
@@ -511,15 +516,14 @@
 }
 
 .hero-subtitle-container {
-  //   text-align: right;
+  margin-top: 18px;
   display: flex;
   flex-direction: column;
   gap: 17px;
 }
 
 .hero-text-container {
-  margin-top: 100px;
-  margin-left: 154px;
+  margin-top: 61px;
   width: 114px;
   display: flex;
   flex-direction: column;
@@ -543,12 +547,6 @@
 }
 .hero-svg-container {
   position: relative;
-  //   height: 41px;
-}
-.hero__elipse-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .hero__button-arrow {
@@ -571,20 +569,17 @@
 }
 
 .hero__subtitle {
-  //   margin-top: 94px;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 1.14;
 
-  //   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: $color-red;
-  z-index: 2;
-
+  z-index: 3;
   @media screen and (min-width: 320px) {
     display: none;
   }
@@ -593,14 +588,19 @@
   }
 }
 
-// .hero__subtitle--top {
-//   margin-top: 100px;
-// }
+.hero__elipse-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 .hero__subtitle-text {
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
-  //   text-align: right;
 
   color: $color-white;
 
@@ -613,7 +613,7 @@
   position: absolute;
   right: 0;
   bottom: 75px;
-  z-index: 4;
+  z-index: 1;
   pointer-events: none;
 
   @media screen and (min-width: 768px) {
@@ -639,14 +639,9 @@
 
 .hero__img-milk {
   position: absolute;
-  bottom: 0;
+  bottom: 16px;
   left: 32px;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
 
-.hero__elipse-icon {
   @media screen and (max-width: 767px) {
     display: none;
   }
