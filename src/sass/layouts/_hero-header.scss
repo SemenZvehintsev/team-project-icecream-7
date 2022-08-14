@@ -2,6 +2,11 @@
   background-color: #ffb8ca;
 }
 
+.header__logo {
+  display: block;
+  margin: 0;
+  height: 50px;
+}
 .header-flex {
   position: relative;
   display: flex;
@@ -93,8 +98,8 @@
   width: 250px;
   height: 100%;
   top: 0;
-  left: 0;
-  transform: translateX(-100%);
+  right: 0;
+  transform: translateX(100%);
   background-color: #e17992;
   transition: transform $transition;
   z-index: 50;
@@ -139,7 +144,10 @@
   margin-right: auto;
   margin-top: 60px;
   margin-bottom: 19px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
   width: 209px;
   height: 44px;
   border: none;
@@ -158,10 +166,6 @@
   @media screen and (min-width: 768px) {
     width: 186px;
   }
-}
-
-.header__mobile-icon {
-  margin-left: 14px;
 }
 
 .header__mobile-item {
@@ -184,6 +188,9 @@
   &:focus {
     color: $color-red;
   }
+}
+.header__mobile-link-active {
+  color: $color-red;
 }
 
 // MODAL BACKDROP
@@ -416,10 +423,10 @@
 }
 .hero-bg {
   position: relative;
-  height: 502px;
+  height: 444px;
 
   @media screen and (min-width: 768px) {
-    height: 416px;
+    height: 334px;
   }
   @media screen and (min-width: 1200px) {
     height: 664px;
@@ -524,11 +531,13 @@
 
 .hero-text-container {
   margin-top: 61px;
+  margin-left: 152px;
   width: 114px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 7px;
 }
 
 .hero__text {
@@ -537,7 +546,7 @@
   line-height: 150%;
 
   color: $color-white;
-
+  z-index: 70;
   @media screen and (min-width: 320px) {
     display: none;
   }
