@@ -1,0 +1,194 @@
+.customer-reviews {
+    background-color: #fff;
+    @media (min-width: 768px){
+        padding-bottom: 20px;
+    }
+    @media (min-width: 1200px){
+        padding-bottom: 60px;
+    }
+
+    &__block {
+        display: flex;
+    }
+    &__picture {
+        @media (max-width: 767px){
+            margin-bottom:32px;
+        }
+        @media (min-width: 768px){
+            margin-bottom: 20px;
+        }
+        @media (min-width: 1200px){
+            margin-bottom: 16px;
+        }
+    }
+
+    &__foto {
+        margin: 0 auto;
+    }
+    &__container{
+        margin-right: 0;
+        display: flex;
+        background: #fafafa;
+        @media (max-width: 767px){
+            max-width: 280px;
+            padding: 43px 50px 15px 50px;
+            margin-bottom: 36px;
+        }
+        @media (min-width: 768px){
+            padding: 37px 6px 35px 6px;
+            margin-bottom: 24px;
+        }
+        @media (min-width: 1200px){
+            width: 968px;
+            padding:47px 74px 31px 74px;
+            margin-bottom: 36px;
+        }
+}
+
+    &__text{
+        z-index: 1;
+        position: relative;
+        font-weight: 500;
+        text-align: center;
+        color: #000000;
+
+        @media (max-width: 767px){
+            font-size: 12px;
+            line-height: 2.55;
+            max-width: 180px;
+            padding-left: 15px;
+            padding-right: 8px;
+            background: repeating-linear-gradient(#fafafa,#fafafa 29px,#e1e1e1 29px,#e1e1e1 30px);
+        }
+        @media (min-width: 768px) and (max-width: 1199px){
+            font-size: 14px;
+            line-height: 2.16;
+            letter-spacing: 0.04em;
+            padding-left: 44px;
+            padding-right: 49px;
+            width: 620px;
+            background: repeating-linear-gradient(#fafafa,#fafafa 29px,#e1e1e1 29px,#e1e1e1 30px);
+        }
+        @media (min-width: 1200px){
+            font-size: 16px;
+            line-height: 1.86;
+            letter-spacing: 0.04em;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-bottom: 8px;
+            background: repeating-linear-gradient(#fafafa,#fafafa 28px,#e1e1e1 28px,#e1e1e1 29px);
+        }
+
+        &::before{
+            z-index: -1;
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            content: '';
+            background-image: url(../images/customer-reviews/comma.png);
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+             background-image: url(../images/customer-reviews/comma@2x.png);}
+            width: 54px;
+            height: 40px;
+
+            @media (max-width: 767px){
+                transform: translate(5%,-34%);
+            }
+            @media(min-width: 768px){
+                transform: translate(16%,-42%);
+            }
+            @media (min-width: 1200px){
+                transform: translate(-6%,-34%);
+            }
+    }
+
+    }   
+    &__subtitle {
+        position: relative;
+        color: #000000; 
+        text-align: center;
+        line-height: 1.86;
+        @media (max-width: 767px){
+            font-size: 14px;
+        }
+        @media (min-width: 768px){
+            font-size: 16px;
+            letter-spacing: 0.04em;
+        }
+        &::before{
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            content: '';
+            top: -70%;
+            left: 50%;
+            transform: translate(-50%, -0%);
+            display: block;
+            width: 32px;
+            height: 4px;
+            background-repeat: no-repeat;
+            background-image: url(../images/customer-reviews/ellispe.png);
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+            background-image: url(../images/customer-reviews/ellipse@2x.png);
+        }
+    }
+}
+}
+.slick-dotted.slick-slider{
+    margin-bottom: 25px;
+}
+.slick-initialized .slick-slide{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.slick-dots li.slick-active button:before{
+top: 47%;
+left: 50%;
+transform: translate(-50%,-50%);
+background-size: contain;
+background-repeat: no-repeat;
+opacity: 1;
+position: absolute;
+height: 12px;
+width: 12px;
+content: '';
+background-repeat: no-repeat;
+background-image: url(../images/customer-reviews/vector.png);
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+background-image: url(../images/customer-reviews/vector@2x.png);}
+}
+.slick-dots li{
+    width: 12px;
+    height: 12px;
+}
+.slick-dots li button {
+    position: relative;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+}
+.slick-dots li button:before {
+    opacity: 1;
+    display: flex;
+    font-size: 12px;
+    color: #d9d9d9;
+    width: 12px;
+    height: 12px;
+    align-items: center;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
