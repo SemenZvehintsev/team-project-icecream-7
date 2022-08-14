@@ -1,4 +1,19 @@
 @import '/node_modules/modern-normalize/modern-normalize.css';
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -243,4 +258,43 @@ body {
     font-size: 14px;
     line-height: 1.94;
   }
+
+}
+
+.section--advantages {
+  background-color: #FFF5F6;
+}
+
+.advantages {
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+  }
+}
+.advantages__item {
+  display: block;
+}
+.advantages__wrap {
+  width: 230px;
+  height: 96px;
+}
+.advantages__description {
+  width: 98px;
+  height: 56px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
 }/*# sourceMappingURL=index.css.map */

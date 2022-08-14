@@ -1,0 +1,116 @@
+.section--advantages {
+  background-color: $color-light-pink;
+}
+
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  &__list {
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    display: block;
+    max-width: 230px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 300px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__wrap {
+    &--one::before {
+      content: '';
+      display: block;
+      width: 33px;
+      height: 50px;
+      background-image: url('../images/advantages/milking.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--second::before {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-image: url('../images/advantages/basket-apple.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--third::before {
+      content: '';
+      display: block;
+      width: 44px;
+      height: 50px;
+      background-image: url('../images/advantages/candy.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__description {
+    width: 98px;
+    height: 56px;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-red;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 36px;
+      margin-bottom: 16px;
+      font-size: 48px;
+      line-height: 1.15;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 40px;
+      font-size: 58px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.74;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.02em;
+    }
+  }
+}
