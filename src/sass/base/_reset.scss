@@ -1,14 +1,14 @@
 ul {
-    list-style-type: none;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
-
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-
 
 h1,
 h2,
@@ -18,11 +18,14 @@ h5,
 h6,
 ul,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
