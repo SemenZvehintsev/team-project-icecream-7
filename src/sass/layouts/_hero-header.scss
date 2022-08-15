@@ -52,11 +52,13 @@
   line-height: 1.31;
 
   color: #ffffff;
-  transition: color 250ms linear, transform 250ms linear;
+  transition: color $transition, transform $transition;
 
   &:hover,
   &:focus {
     color: #d41443;
+    font-size: 18px;
+    transform: rotate(0.5turn);
   }
 }
 
