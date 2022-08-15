@@ -208,12 +208,12 @@ body {
 
 .header__nav-list {
   display: flex;
+  align-items: center;
   gap: 35px;
 }
 
 .header__nav-link {
-  padding-top: 52px;
-  padding-bottom: 52px;
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
@@ -223,7 +223,7 @@ body {
 .header__nav-link:hover, .header__nav-link:focus {
   color: #d41443;
   font-size: 18px;
-  transform: rotate(0.5turn);
+  transform: scale(1.3);
 }
 
 .header__button {
