@@ -1,7 +1,7 @@
-<section class="section section-contacts">
+<section id="contact" class="section section-contacts">
   <div class="container">
     <h2 class="visually-hidden">Contacts</h2>
-    <ul id="contact" class="section-contacts__list">
+    <ul class="section-contacts__list">
       <li class="section-contacts__item">
         <p class="section-contacts__hero section-contacts__hero--yellow">cafe</p>
           <h3 class="section-contacts__title" >Chicago</h3>
@@ -45,8 +45,18 @@
       </li>
     </ul>
     <div class="section-contacts__buttons">
-      <button class="section-contacts__button section-contacts__button--red" type="button" >Our Locations ></button>
-      <button class="section-contacts__button" type="button" >Franchise ></button>
+      <button class="section-contacts__button section-contacts__button--red" 
+      type="button" > Our Locations 
+      <svg class="section-contacts__icon" width="12" height="12">
+          <use href="/src/images/contacts/icon.svg#icon-vectorright"></use>
+        </svg>
+      </button>
+      <button class="section-contacts__button" 
+        type="button"> Franchise 
+        <svg class="section-contacts__icon" width="12" height="12">
+          <use href="/src/images/contacts/icon.svg#icon-vectorright"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>

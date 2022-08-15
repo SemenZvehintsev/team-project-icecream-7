@@ -42,6 +42,12 @@
       width: 368px;
       padding: 40px;
     }
+    transform: scale(1);
+    transition: transform $transition;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__hero {
@@ -145,14 +151,17 @@
     background-color: #fff;
     border-radius: 22px;
     border: none;
-    padding: 12px 0;
+    padding: 12px 35px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     text-align: center;
     color: #d41443;
     transition: color $transition, background-color $transition;
-    width: 161px;
+    @media screen and (max-width: 767px) {
+      padding: 12px 0;
+      width: 161px;
+    }
 
     &:hover,
     &:focus {
@@ -164,6 +173,14 @@
       background-color: #d41342;
       color: #fff;
     }
+  }
+
+  &__icon {
+    margin-left: 13px;
+    @media screen and (max-width: 767px) {
+      margin-left: 8px;
+    }
+    stroke: currentColor;
   }
 }
 
