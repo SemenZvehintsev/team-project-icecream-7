@@ -169,10 +169,10 @@
       color: #fff;
     }
 
-    &--red {
-      background-color: #d41342;
-      color: #fff;
-    }
+    // &--red {
+    //   background-color: #d41342;
+    //   color: #fff;
+    // }
   }
 
   &__icon {
@@ -220,4 +220,9 @@
       }
     }
   }
+}
+
+.iframe {
+  height: 400px;
+  width: 100%;
 }

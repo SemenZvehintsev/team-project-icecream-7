@@ -45,8 +45,8 @@
       </li>
     </ul>
     <div class="section-contacts__buttons">
-      <button class="section-contacts__button section-contacts__button--red" 
-      type="button" > Our Locations 
+      <button class="section-contacts__button" 
+      type="button" data-modal-contacts-open> Our Locations 
       <svg class="section-contacts__icon" width="12" height="12">
           <use href="/src/images/contacts/icon.svg#icon-vectorright"></use>
         </svg>
@@ -59,4 +59,25 @@
       </button>
     </div>
   </div>
+
+<div class="backdrop is-hidden" data-modal-contacts>
+    <div class="modal">
+      <!-- MODAL FORM -->
+
+      <form class="form">
+        <div role="group" class="container-form">
+          <strong class="form__title">
+            Where are we?</strong
+          >
+          <div class="iframe">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1O47jox12uSaq8da867_h2dFhKbIRXmA&hl=ru&ehbc=2E312F" width="100%" height="100%"></iframe>
+          </div>
+      <button class="modal__button" type="button" data-modal-contacts-close>
+        <svg width="30" height="30">
+          <use href="/src/images/header/icon.svg#icon-icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
 </section>
