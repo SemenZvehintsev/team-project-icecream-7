@@ -604,6 +604,7 @@
 }
 
 .hero__button-arrow {
+  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -613,6 +614,11 @@
   border-radius: 50%;
   border: none;
   background-color: $color-white;
+
+  &:hover,
+  &:focus {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -627,6 +633,12 @@
 .button__arrow-right {
   width: 18px;
   height: 18px;
+  cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .hero__subtitle {
