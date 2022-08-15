@@ -3,6 +3,7 @@
 .gallery__img{
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 
 }
 .gallery {
@@ -11,12 +12,11 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 0 390px;
-        background-image: url(../images/about/milk-bg-280.png);
-
+      
         @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: url(../images/about/milk-bg-560.png); 
+           
         }
     }
 
