@@ -1,5 +1,5 @@
 <section class="section section--about" id="about">
-  <div class="container">
+  <div class="container container--about">
     <div class="naming">
       <p class="naming__label">tradition and love</p>
       <h2 class="naming__title">how it’s made?</h2>
@@ -47,13 +47,35 @@
           <br />
           Aliquam erat volutpat. Aenean accumsan.
         </p>
-        <button class="button" type="button">
+        <button class="button" type="button" data-about-modal-open>
           Read more
           <svg class="button__icon" width="8" height="16">
             <use href="./images/header/icon.svg#icon-vectorright"></use>
           </svg>
         </button>
       </div>
+    </div>
+  </div>
+
+  <div class="about-modal is-hidden" data-about-modal>
+    <div class="about-modal__box">
+      <p class="about-modal__label">icecream technology</p>
+      <p class="about-modal__text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero omnis
+        ex ea sint tempora temporibus aliquid eos eveniet porro, exercitationem
+        necessitatibus eum, suscipit aut autem? Sapiente explicabo dolorum
+        ducimus at.
+      </p>
+
+      <button
+        class="about-modal__close-button"
+        type="button"
+        data-about-modal-close
+      >
+        <svg class="about-modal__close-icon" width="14" height="14">
+          <use href="/src/images/header/icon.svg#icon-close"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
