@@ -2,7 +2,7 @@
     background-color: #FFF5F6;
 
     @media (min-width: 1200px) {
-        padding-right: 16px;
+        padding-top: 60px;
     }
 }
 
@@ -146,8 +146,7 @@
     }
 
     @media (min-width: 1200px) {
-        display: flex;
-        align-items: baseline;
+        max-width: 1167px;
         justify-content: center;
         }
 }
