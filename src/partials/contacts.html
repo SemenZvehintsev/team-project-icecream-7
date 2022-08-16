@@ -1,7 +1,7 @@
-<section class="section section-contacts">
+<section id="contact" class="section section-contacts">
   <div class="container">
     <h2 class="visually-hidden">Contacts</h2>
-    <ul id="contact" class="section-contacts__list">
+    <ul class="section-contacts__list">
       <li class="section-contacts__item">
         <p class="section-contacts__hero section-contacts__hero--yellow">cafe</p>
           <h3 class="section-contacts__title" >Chicago</h3>
@@ -45,8 +45,39 @@
       </li>
     </ul>
     <div class="section-contacts__buttons">
-      <button class="section-contacts__button" >Our Locations ></button>
-      <button class="section-contacts__button" >Franchise ></button>
+      <button class="section-contacts__button" 
+      type="button" data-modal-contacts-open> Our Locations 
+      <svg class="section-contacts__icon" width="12" height="12">
+          <use href="/src/images/contacts/icon.svg#icon-vectorright"></use>
+        </svg>
+      </button>
+      <button class="section-contacts__button" 
+        type="button"> Franchise 
+        <svg class="section-contacts__icon" width="12" height="12">
+          <use href="/src/images/contacts/icon.svg#icon-vectorright"></use>
+        </svg>
+      </button>
     </div>
   </div>
+
+<div class="backdrop is-hidden" data-modal-contacts>
+    <div class="modal">
+      <!-- MODAL FORM -->
+
+      <form class="form">
+        <div role="group" class="container-form">
+          <strong class="form__title">
+            Where are we?</strong
+          >
+          <div class="iframe">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1O47jox12uSaq8da867_h2dFhKbIRXmA&hl=ru&ehbc=2E312F" width="100%" height="100%"></iframe>
+          </div>
+      <button class="modal__button" type="button" data-modal-contacts-close>
+        <svg width="30" height="30">
+          <use href="/src/images/header/icon.svg#icon-icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
 </section>
