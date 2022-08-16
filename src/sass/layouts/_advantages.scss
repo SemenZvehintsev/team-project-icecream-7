@@ -1,10 +1,20 @@
-.section--advantages {
+.section-advantages {
   background-color: $color-light-pink;
 }
 
 .advantages {
   padding-top: 40px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 64px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 40px;
+    padding-bottom: 120px;
+  }
 
   &__list {
     display: block;
