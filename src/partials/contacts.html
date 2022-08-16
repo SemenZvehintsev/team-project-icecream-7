@@ -3,55 +3,79 @@
     <h2 class="visually-hidden">Contacts</h2>
     <ul class="section-contacts__list">
       <li class="section-contacts__item">
-        <p class="section-contacts__hero section-contacts__hero--yellow">cafe</p>
+        <div class="section-contacts__thumb">
+          <p class="section-contacts__hero section-contacts__hero--yellow">cafe</p>
           <h3 class="section-contacts__title" >Chicago</h3>
           <p class="section-contacts__text" >Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        <div class="working-hours"> 
-          <p class="working-hours__text" >Monday - Friday</p>
-          <p class="working-hours__time" >06:00 AM - 10:00 PM</p>
-          <p class="working-hours__text" >Saturday - Sunday</p>
-          <p class="working-hours__time" >08:00 AM - 16:00 PM</p>
         </div>
-          <a class="section-contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a>
-          <a class="section-contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+        <ul class="working-hours">
+          <li class="working-hours__item" >
+            <p class="working-hours__text" >Monday - Friday</p>
+            <p class="working-hours__time" >06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="working-hours__item" >
+            <p class="working-hours__text" >Saturday - Sunday</p>
+            <p class="working-hours__time" >08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="section-contacts__nav">
+          <li><a class="section-contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
+          <li><a class="section-contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+        </ul>
       </li>
       <li class="section-contacts__item">
-        <p class="section-contacts__hero section-contacts__hero--green">foodtruck</p>
+        <div class="section-contacts__thumb">
+          <p class="section-contacts__hero section-contacts__hero--green">FOOD TRUCK</p>
           <h3 class="section-contacts__title" >Los Angeles</h3>
           <p class="section-contacts__text" >Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        <div class="working-hours">
-          <p class="working-hours__text" >Monday - Friday</p>
-          <p class="working-hours__time" >06:00 AM - 10:00 PM</p>
-          <p class="working-hours__text" >Saturday - Sunday</p>
-          <p class="working-hours__time" >08:00 AM - 16:00 PM</p>
         </div>
-          <a class="section-contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a>
-          <a class="section-contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+        <ul class="working-hours">
+          <li class="working-hours__item" >
+            <p class="working-hours__text" >Monday - Friday</p>
+            <p class="working-hours__time" >06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="working-hours__item" >
+            <p class="working-hours__text" >Saturday - Sunday</p>
+            <p class="working-hours__time" >08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="section-contacts__nav">
+          <li><a class="section-contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
+          <li><a class="section-contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+        </ul>
       </li>
       </li>
       <li class="section-contacts__item">
-        <p class="section-contacts__hero section-contacts__hero--yellow">cafe</p>
+        <div class="section-contacts__thumb">
+          <p class="section-contacts__hero section-contacts__hero--yellow">cafe</p>
           <h3 class="section-contacts__title" >New York</h3>
           <p class="section-contacts__text" >Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        <div class="working-hours">
-          <p class="working-hours__text" >Monday - Friday</p>
-          <p class="working-hours__time" >06:00 AM - 10:00 PM</p>
-          <p class="working-hours__text" >Saturday - Sunday</p>
-          <p class="working-hours__time" >08:00 AM - 16:00 PM</p>
         </div>
-          <a class="section-contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a>
-          <a class="section-contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+        <ul class="working-hours">
+          <li class="working-hours__item" >
+            <p class="working-hours__text" >Monday - Friday</p>
+            <p class="working-hours__time" >06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="working-hours__item" >
+            <p class="working-hours__text" >Saturday - Sunday</p>
+            <p class="working-hours__time" >08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="section-contacts__nav">
+          <li><a class="section-contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
+          <li><a class="section-contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+        </ul>
       </li>
       </li>
     </ul>
     <div class="section-contacts__buttons">
-      <button class="section-contacts__button" 
+      <button class="section-contacts__button section-contacts__button--red" 
       type="button" data-modal-contacts-open> Our Locations 
       <svg class="section-contacts__icon" width="12" height="12">
           <use href="/src/images/contacts/icon.svg#icon-vectorright"></use>
         </svg>
       </button>
-      <button class="section-contacts__button" 
+      <button class="section-contacts__button section-contacts__button--white" 
         type="button"> Franchise 
         <svg class="section-contacts__icon" width="12" height="12">
           <use href="/src/images/contacts/icon.svg#icon-vectorright"></use>
@@ -59,10 +83,11 @@
       </button>
     </div>
   </div>
+<!-- backdrop -->
 
-<div class="backdrop is-hidden" data-modal-contacts>
+  <div class="backdrop is-hidden" data-modal-contacts>
     <div class="modal">
-      <!-- MODAL FORM -->
+      <!-- modal-form -->
 
       <form class="form">
         <div role="group" class="container-form">
@@ -77,6 +102,7 @@
           <use href="/src/images/header/icon.svg#icon-icon-close"></use>
         </svg>
       </button>
+        </div>
     </div>
   </div>
 

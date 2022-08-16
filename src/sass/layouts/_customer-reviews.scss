@@ -136,8 +136,15 @@
     }
 }
 }
+.slick-list{
+    margin-bottom: 20px;
+}
+.slick-dots {
+    position: static;
+}
+
 .slick-dotted.slick-slider{
-    margin-bottom: 25px;
+    margin-bottom: 0px;
 }
 .slick-initialized .slick-slide{
     display: flex;
