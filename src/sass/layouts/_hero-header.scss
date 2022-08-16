@@ -41,22 +41,24 @@
 
 .header__nav-list {
   display: flex;
+  align-items: center;
   gap: 35px;
 }
 
 .header__nav-link {
-  padding-top: 52px;
-  padding-bottom: 52px;
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
 
   color: #ffffff;
-  transition: color 250ms linear, transform 250ms linear;
+  transition: color $transition, transform $transition;
 
   &:hover,
   &:focus {
     color: #d41443;
+    font-size: 18px;
+    transform: scale(1.3);
   }
 }
 
@@ -602,6 +604,7 @@
 }
 
 .hero__button-arrow {
+  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -611,6 +614,11 @@
   border-radius: 50%;
   border: none;
   background-color: $color-white;
+
+  &:hover,
+  &:focus {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -625,9 +633,16 @@
 .button__arrow-right {
   width: 18px;
   height: 18px;
+  cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .hero__subtitle {
+  position: relative;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
