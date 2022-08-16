@@ -7,6 +7,7 @@
 }
 
 .footer__items{
+    border: 2px solid red;
     @media (min-width: 768px) {
         display: flex;
         justify-content: space-between;
@@ -85,6 +86,7 @@
     display: flex;
     justify-content: flex-end;
     gap: 28px;
+    padding-bottom: 40px;
 }
 
 .footer__social-icon{
@@ -104,8 +106,7 @@
     fill: #D41443;
 }
 
-
-.footer__telephone{
+.footer__tel{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -113,7 +114,6 @@
     line-height: 1.8;
     text-align: right;
     color: #000000;
-    margin-top: 40px;
 
     @media (min-width: 768px) {
         font-size: 14px;
