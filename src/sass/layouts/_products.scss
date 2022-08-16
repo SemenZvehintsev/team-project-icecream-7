@@ -1,5 +1,5 @@
-.products {
-  margin-bottom: 60px;
+.section--products {
+  padding-bottom: 60px;
 }
 
 .products-name {
@@ -71,7 +71,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('../images/products/group3.svg');
+    background-image: url('../images/products/group4.svg');
     background-position: center;
     margin: 32px auto;
   }
@@ -211,7 +211,7 @@
   }
 }
 
-.products-card__btn {
+.products-card-btn {
   margin: 0 auto;
   background: $color-white;
   width: 40px;
@@ -222,9 +222,108 @@
   display: flex;
   align-items: center;
   text-align: center;
-  background-image: url('../images/products/arrow-right.svg');
-  &:hover {
-    // border: 1px solid #000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  justify-content: center;
+  transition: background-color 250ms linear;
+  &:hover,
+  :focus {
+    background-color: #ecebeb;
+  }
+}
+
+.products-icon {
+  fill: $color-red;
+}
+
+.products-backdrop {
+  padding: 20px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: visible;
+  overflow-y: auto;
+  z-index: 90;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  @media screen and (min-width: 430px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 94px 15px;
+  }
+}
+
+.products-modal {
+  min-width: 280px;
+  border-radius: 24px;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 710px;
+    padding: 60px 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1000px;
+    padding: 60px;
+  }
+}
+
+.products-price {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-bottom: 32px;
+  color: $color-white;
+}
+
+.products-price-number {
+  color: $color-red;
+}
+
+.modal-pink {
+  background-color: #ffb8ca;
+}
+
+.modal-yellow {
+  background-color: #f0d1a5;
+}
+
+.modal-green {
+  background-color: #c2e297;
+}
+
+.products-backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.products-modal-btn {
+  margin: 0 auto;
+  background-color: $color-white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms linear;
+  &:hover,
+  :focus {
+    background-color: #ecebeb;
   }
 }

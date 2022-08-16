@@ -1,32 +1,112 @@
-<section class="section products">
+<section class="section section--products" id="products">
   <div class="container">
     <div class="naming products-name">
       <p class="naming__label">100% natural</p>
-      <h1 class="naming__title">products</h1>
+      <h2 class="naming__title">products</h2>
     </div>
     <ul class="products-card__list">
       <li class="products-card__item pink">
-        <h2 class="products-card__title">ice cream</h2>
+        <h3 class="products-card__title">ice cream</h3>
         <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et</p>
-        <button class="products-card__btn"></button>
+        <button class="products-card-btn" type="button" data-products-modal-pink-open>
+          <svg class="products-icon" width="10" height="10">
+            <use href="/src/images/products/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
       </li>
       <li class="products-card__item yellow">
-        <h2 class="products-card__title">ice coffee</h2>
+        <h3 class="products-card__title">ice coffee</h3>
         <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et</p>
-        <button class="products-card__btn"></button>
+        <button class="products-card-btn" type="button" data-products-modal-yellow-open>
+          <svg class="products-icon" width="10" height="10">
+            <use href="/src/images/products/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
       </li>
       <li class="products-card__item green">
-        <h2 class="products-card__title">milkshakes</h2>
+        <h3 class="products-card__title">milkshakes</h3>
         <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et</p>
-        <button class="products-card__btn" type="button">
-          <!-- <svg class="" width="40" height="40">
-            <use href="./images/products/arrow-right.svg"></use>
-          </svg> -->
+        <button class="products-card-btn" type="button" data-products-modal-green-open>
+          <svg class="products-icon" width="10" height="10">
+            <use href="/src/images/products/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
         </button>
       </li>
     </ul>
   </div>
+
+  <!-- PRODUCTS CARD MODALS -->
+
+  <div class="products-modal-pink">
+    <div class="products-backdrop is-hidden" data-products-modal-pink>
+      <div class="products-modal modal-pink">
+
+        <h3 class="products-card__title">ice cream</h3>
+        <p class="products-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim repellendus
+          similique sint vel quisquam quibusdam numquam minus. Qui, eligendi officia. Consequatur rerum autem iusto ad
+          obcaecati quia libero dolor. Rerum dicta error quae deleniti eos voluptatibus aliquam maxime amet, in veniam
+          impedit dolorum maiores unde corporis nihil natus necessitatibus, sapiente culpa? Consectetur fugiat eius
+          rerum, atque, velit alias obcaecati recusandae nesciunt asperiores neque libero accusamus dignissimos maiores
+          labore in!</p>
+        <p class="products-price">Price:
+          <span class="products-price-number">$2.00</span>
+        </p>
+        <button type="button" class="products-modal-btn" data-products-modal-pink-close>
+          <svg class="products-icon" width="20" height="20">
+            <use href="/src/images/header/icon.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="products-modal-yellow">
+    <div class="products-backdrop is-hidden" data-products-modal-yellow>
+      <div class="products-modal modal-yellow">
+        <h3 class="products-card__title">ice coffee</h3>
+        <p class="products-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim repellendus
+          similique sint vel quisquam quibusdam numquam minus. Qui, eligendi officia. Consequatur rerum autem iusto ad
+          obcaecati quia libero dolor. Rerum dicta error quae deleniti eos voluptatibus aliquam maxime amet, in veniam
+          impedit dolorum maiores unde corporis nihil natus necessitatibus, sapiente culpa? Consectetur fugiat eius
+          rerum, atque, velit alias obcaecati recusandae nesciunt asperiores neque libero accusamus dignissimos maiores
+          labore in!</p>
+        <p class="products-price">Price:
+          <span class="products-price-number">$5.00</span>
+        </p>
+        <button type="button" class="products-modal-btn" data-products-modal-yellow-close>
+          <svg class="products-icon" width="20" height="20">
+            <use href="/src/images/header/icon.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="products-modal-green">
+    <div class="products-backdrop is-hidden" data-products-modal-green>
+      <div class="products-modal modal-green">
+        <h3 class="products-card__title">milkshake</h3>
+        <p class="products-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim repellendus
+          similique sint vel quisquam quibusdam numquam minus. Qui, eligendi officia. Consequatur rerum autem iusto ad
+          obcaecati quia libero dolor. Rerum dicta error quae deleniti eos voluptatibus aliquam maxime amet, in veniam
+          impedit dolorum maiores unde corporis nihil natus necessitatibus, sapiente culpa? Consectetur fugiat eius
+          rerum, atque, velit alias obcaecati recusandae nesciunt asperiores neque libero accusamus dignissimos maiores
+          labore in!</p>
+        <p class="products-price">Price:
+          <span class="products-price-number">$3.00</span>
+        </p>
+        <button type="button" class="products-modal-btn" data-products-modal-green-close>
+          <svg class="products-icon" width="20" height="20">
+            <use href="/src/images/header/icon.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
 </section>
