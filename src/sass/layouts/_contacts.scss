@@ -50,6 +50,14 @@
     }
   }
 
+  &__thumb {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e1e1e1;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 32px;
+    }
+  }
+
   &__hero {
     margin-bottom: 20px;
     height: 16px;
@@ -109,6 +117,13 @@
     }
   }
 
+  &__nav {
+    padding-top: 24px;
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+    }
+  }
+
   &__link {
     font-weight: 500;
     font-size: 12px;
@@ -148,7 +163,6 @@
   }
 
   &__button {
-    background-color: #fff;
     border-radius: 22px;
     border: none;
     padding: 12px 35px;
@@ -156,23 +170,26 @@
     font-size: 16px;
     line-height: 1.31;
     text-align: center;
-    color: #d41443;
     transition: color $transition, background-color $transition;
     @media screen and (max-width: 767px) {
       padding: 12px 0;
       width: 161px;
     }
 
-    &:hover,
-    &:focus {
+    &--red {
       background-color: #d41342;
       color: #fff;
     }
 
-    // &--red {
-    //   background-color: #d41342;
-    //   color: #fff;
-    // }
+    &--white {
+      background-color: #fff;
+      color: #d41443;
+
+      &:hover,
+      &:focus {
+        background-color: #ecebeb;
+      }
+    }
   }
 
   &__icon {
@@ -186,12 +203,16 @@
 
 .working-hours {
   padding: 24px 0;
-  margin: 24px 0;
-  border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   @media screen and (min-width: 768px) {
     padding: 32px 0;
-    margin: 32px 0;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+    }
   }
 
   &__text {
@@ -199,6 +220,14 @@
     font-size: 12px;
     line-height: 1.83;
     color: #000;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+    }
   }
 
   &__time {
@@ -211,13 +240,6 @@
     }
     @media screen and (min-width: 1200px) {
       font-size: 16px;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 8px;
-      @media screen and (min-width: 768px) {
-        margin-bottom: 12px;
-      }
     }
   }
 }
