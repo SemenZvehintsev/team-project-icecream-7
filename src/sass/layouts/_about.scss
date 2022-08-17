@@ -47,8 +47,10 @@
     
     &__img {
         width: 280px;
+        margin-bottom: 40px;
         
         @media screen and (min-width: 768px) {
+            margin-bottom: 0;
             width: 336px;
         }
 
@@ -58,14 +60,12 @@
     }
 
     &__description {
-        width: 220px;
-        margin-top: 40px;
+        padding-right: 60px;
         font-weight: 500;
         font-size: 12px;
         line-height: 1.59;
         
         @media screen and (min-width: 768px) {
-            margin-top: 0;
             width: 334px;
             font-size: 14px;
             line-height: 1.76;
